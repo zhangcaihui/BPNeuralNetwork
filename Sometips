@@ -1,0 +1,12 @@
+1:若cases.txt 存储如 [[],[],[]]格式，可用如下方式按list读出
+  f1=open(r"cases.txt","r")
+  cases = ast.literal_eval(f1.read())#按list读出
+2:add list to list
+eg：
+  lists=[[1,2],[3,4]]
+  result=[]
+  if you want get result=[[1,2],[3,4]],you can do like below
+  for list in lists:
+    result.append(list[:])
+  
+
